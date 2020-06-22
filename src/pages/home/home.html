@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-10>
+          <p style="font-weight: bold; font-size: 20px; margin-top: 10px; color: white;"> Berita Terbaru </p>
+        </ion-col>
+        <ion-col col-2>
+          <button ion-button clear icon-only>
+            <ion-icon name='search' style="font-size:30px; color:white; margin-top:20px;" [class.iconcolor]="iconColor"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col class="list" col-12 *ngFor="let news of articles" style="padding: 0px !important;">
+      <img [src]="news.urlToImage">
+      <div class="alas">
+       <p style="color: white;
+       font-weight: bold;
+       font-size: 15px;
+       padding: 10px;
+       margin-top: 75px;"> {{ news.title }}</p>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>

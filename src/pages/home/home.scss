@@ -1,0 +1,23 @@
+page-home {
+    div.toolbar-background.toolbar-background-md {
+        background-color: #00a1b5;
+    }
+    img {
+        width: 100%;
+    }
+    div.alas {
+        position: absolute;
+        background: linear-gradient(#ffffff00, #0000008c);
+        top:0px;
+        height: 100%;
+        border-bottom:solid 2px black;
+    }
+    ion-col.list {
+        position: relative;
+        height:150px;
+    }
+    div.scroll-content{
+        padding:0!important;
+    }
+
+}
